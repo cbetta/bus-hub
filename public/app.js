@@ -1,7 +1,7 @@
 $(document).ready(function(){
   $.get({
     url: '/config.json',
-    success: init,
+    success: inits,
     dataType: 'json'
   });
   setInterval(showTime, 1000);
@@ -9,7 +9,7 @@ $(document).ready(function(){
 
 var config = null;
 
-var init = function(data) {
+var inits = function(data) {
   config = data;
   loadArrivals();
   setInterval(loadArrivals, 10000);

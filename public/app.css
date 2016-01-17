@@ -1,6 +1,4 @@
-.template {
-  display: none;
-}
+
 
 body {
   background-color: black;
@@ -27,6 +25,10 @@ body {
   display: block;
   width: 100%;
   padding: 0.5em;
+}
+
+.arrival.template {
+  display: none;
 }
 
 .arrival:nth-child(odd) {
